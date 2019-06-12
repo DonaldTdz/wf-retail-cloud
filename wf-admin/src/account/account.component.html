@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="top">
+
+    <div class="head">
+      <a [routerLink]="['/']">
+        <!--<img class="logo" src="assets/images/logos/hechuang.png">-->
+        <span class="title">咿呀亲贝O2O营销管理平台</span>
+      </a>
+    </div>
+
+    <!-- <p class="desc">您现在使用的是免费开源版本；欢迎到
+      <a href="http://www.52abp.com/" target="_blank">52ABP.COM</a>了解更多的框架信息
+    </p>-->
+
+    <div *ngIf="showTenantChange()">
+      <tenant-change></tenant-change>
+    </div>
+
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <br>
+  <!--<account-languages></account-languages>-->
+
+  <global-footer [links]="links" style="margin: 0px; padding: 0px;">
+    <div style="color:white !important;">
+      Copyright
+      <i class="anticon anticon-copyright" style="color:white !important"></i> {{currentYear}}
+      <a href="#" target="_blank" style="color:white !important">成都奇异森林科技有限公司</a>
+    </div>
+  </global-footer>
+
+</div>

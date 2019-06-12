@@ -1,0 +1,67 @@
+<div class="padding-bottom-45">
+  <div class="modal-header">
+    <div class="modal-title">{{title}}</div>
+  </div>
+  <form nz-form [formGroup]="form" #validateForm="ngForm" (ngSubmit)="save()" *ngIf="dataDictionary">
+    <nz-form-item nz-row>
+      <nz-form-label nz-col [nzSm]="5" [nzXs]="24" nzRequired>数据分组</nz-form-label>
+      <nz-form-control [nzSm]="19" nzHasFeedback>
+        <nz-select formControlName="group" [nzPlaceHolder]="'请选择数据分组'" [(ngModel)]="dataDictionary.group"
+          [nzShowSearch]="true" style="width:100%;">
+          <nz-option *ngFor="let i of groupList" [nzLabel]="i.text" [nzValue]="i.value">
+          </nz-option>
+        </nz-select>
+        <nz-form-explain *ngIf="(form.get('group')?.dirty && form.get('group')?.errors)
+      ">数据分组不能为空
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item nz-row>
+      <nz-form-label nz-col [nzSm]="5" nzRequired [nzXs]="24">数据字典code</nz-form-label>
+      <nz-form-control [nzSm]="19" nzHasFeedback>
+        <input nz-input formControlName="code" placeholder="请输入数据字典code" [(ngModel)]="dataDictionary.code" />
+        <nz-form-explain *ngIf="(form.get('code')?.dirty && form.get('code')?.errors)
+      ">数据字典code必须大于0小于25个字符
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item nz-row>
+      <nz-form-label nz-col [nzSm]="5" [nzXs]="24" nzRequired>数据字典值</nz-form-label>
+      <nz-form-control [nzSm]="19" nzHasFeedback>
+        <input nz-input formControlName="value" placeholder="请输入数据字典值" [(ngModel)]="dataDictionary.value" />
+        <nz-form-explain *ngIf="
+        (form.get('value')?.dirty && form.get('value')?.errors)
+      ">数据字典值必须大于0小于100个字符
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item nz-row>
+      <nz-form-label nz-col [nzSm]="5" [nzXs]="24">数据字典描述</nz-form-label>
+      <nz-form-control [nzSm]="19" nzHasFeedback>
+        <input nz-input formControlName="desc" placeholder="请输入单位" [(ngModel)]="dataDictionary.desc" />
+        <nz-form-explain *ngIf="
+          (form.get('desc')?.dirty && form.get('desc')?.errors)
+        ">数据字典描述不能超过100个字符
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item nz-row>
+      <nz-form-label nz-col [nzSm]="5" [nzXs]="24">排序</nz-form-label>
+      <nz-form-control [nzSm]="19" nzHasFeedback>
+        <input nz-input formControlName="seq" placeholder="请输入排序" [(ngModel)]="dataDictionary.seq" />
+        <nz-form-explain *ngIf="
+          (form.get('seq')?.dirty && form.get('seq')?.errors)
+        ">排序必须为数字
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <div class="modal-footer">
+      <button nz-button type="button" [disabled]="saving" (click)="close()">
+        {{l("Cancel")}}
+      </button>
+      <button nz-button [nzType]="'primary'" type="submit" [disabled]="!validateForm.valid||saving">
+        保存
+      </button>
+    </div>
+  </form>
+</div>

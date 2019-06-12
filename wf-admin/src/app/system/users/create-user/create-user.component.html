@@ -1,0 +1,102 @@
+<div class="padding-bottom-45">
+
+
+  <div class="modal-header">
+    <div class="modal-title">创建用户</div>
+  </div>
+
+
+  <form nz-form #validateForm="ngForm" (ngSubmit)="save()" *ngIf="user">
+    <nz-tabset>
+      <nz-tab [nzTitle]="'用户详细'">
+        <!-- 用户账号 -->
+        <nz-form-item>
+          <nz-form-control nzHasFeedback>
+            <input nz-input name="userName" #userName="ngModel" [(ngModel)]="user.userName" [placeholder]="'用户账号'"
+              required>
+            <nz-form-explain *ngIf="userName.control.dirty&&userName.control.errors">
+              <ng-container *ngIf="userName.control.hasError('required')">不能为空</ng-container>
+            </nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+
+        <!-- 名 / 姓名 -->
+        <nz-form-item>
+          <nz-form-control nzHasFeedback>
+            <input nz-input name="name" #name="ngModel" [(ngModel)]="user.name" [placeholder]="'用户姓名'"
+              autocomplete="name" required>
+            <nz-form-explain *ngIf="name.control.dirty&&name.control.errors">
+              <ng-container *ngIf="name.control.hasError('required')">不能为空</ng-container>
+            </nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+
+        <!-- 邮箱 -->
+        <nz-form-item>
+          <nz-form-control nzHasFeedback>
+            <input nz-input name="emailAddress" #emailAddress="ngModel" [(ngModel)]="user.emailAddress"
+              [placeholder]="'Email'" autocomplete="email" required email>
+            <nz-form-explain *ngIf="emailAddress.control.dirty&&emailAddress.control.errors">
+              <ng-container *ngIf="emailAddress.control.hasError('required')">不能为空</ng-container>
+              <ng-container *ngIf="emailAddress.control.hasError('email')">邮箱格式不对</ng-container>
+            </nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+
+        <!-- 密码 -->
+        <nz-form-item>
+          <nz-form-control nzHasFeedback>
+            <input nz-input name="password" #password="ngModel" [(ngModel)]="user.password" [placeholder]="'密码'"
+              type="password" autocomplete="current-password" validateEqual="confirmPassword" reverse="true" required
+              minlength="6" maxlength="32">
+            <nz-form-explain *ngIf="password.control.dirty&&password.control.errors">
+              <ng-container *ngIf="password.control.hasError('required')">不能为空</ng-container>
+              <ng-container *ngIf="password.control.hasError('minlength')">长度需大于等于6</ng-container>
+              <ng-container *ngIf="password.control.hasError('maxlength')">长度超过限制</ng-container>
+            </nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+
+        <!-- 确认密码 -->
+        <nz-form-item>
+          <nz-form-control nzHasFeedback>
+            <input nz-input name="confirmPassword" #confirmPassword='ngModel' [(ngModel)]="confirmPasswordInput"
+              [placeholder]="l('ConfirmPassword')" type="password" validateEqual="password" reverse="false"
+              minlength="6" maxlength="32" autocomplete="current-password" required>
+            <nz-form-explain *ngIf="confirmPassword.control.dirty&&confirmPassword.control.errors">
+              <ng-container *ngIf="confirmPassword.control.hasError('required')">{{l('CanNotNull')}}</ng-container>
+              <ng-container *ngIf="confirmPassword.control.hasError('minlength')">长度需大于等于6</ng-container>
+              <ng-container *ngIf="confirmPassword.control.hasError('maxlength')">{{l('MaxLength')}}</ng-container>
+              <ng-container *ngIf="confirmPassword.control.hasError('validateEqual')">两次输入的密码不一致</ng-container>
+            </nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+
+        <!-- 激活 -->
+        <nz-form-item>
+          <label nz-checkbox name="isActive" [(ngModel)]="user.isActive">是否启用</label>
+        </nz-form-item>
+      </nz-tab>
+
+
+      <nz-tab [nzTitle]="'角色'">
+        <nz-checkbox-group name="roles" [(ngModel)]="roleList"></nz-checkbox-group>
+      </nz-tab>
+
+
+    </nz-tabset>
+
+
+
+    <!-- 功能按钮 -->
+    <div class="modal-footer">
+      <button nz-button type="button" [disabled]="saving" (click)="close()">
+        取消
+      </button>
+      <button nz-button [nzType]="'primary'" type="submit" [disabled]="!validateForm.valid||saving">
+        保存
+      </button>
+    </div>
+
+  </form>
+</div>

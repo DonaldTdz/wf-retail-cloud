@@ -1,0 +1,65 @@
+<div class="padding-bottom-45">
+
+  <div class="modal-header">
+    <div class="modal-title">新增钉钉配置</div>
+  </div>
+
+  <form nz-form [formGroup]="form" #validateForm="ngForm" (ngSubmit)="save()" *ngIf="dingTalkConfig">
+
+    <nz-form-item nz-row>
+      <nz-form-label nz-col [nzSm]="5" [nzXs]="24" nzRequired nzFor="type">配置类型</nz-form-label>
+      <nz-form-control [nzSm]="19" nzHasFeedback>
+        <nz-select formControlName="type" [nzPlaceHolder]="'配置类型'" [(ngModel)]="dingTalkConfig.type"
+          [nzShowSearch]="true" style="width:100%;">
+          <nz-option *ngFor="let i of DingDingType" [nzLabel]="i.text" [nzValue]="i.value">
+          </nz-option>
+        </nz-select>
+        <nz-form-explain *ngIf="form.get('type').dirty&&form.get('type').hasError('required')">请选择配置类型
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item nz-row>
+      <nz-form-label nz-col [nzSm]="5" [nzXs]="24" nzRequired nzFor="code">编码</nz-form-label>
+      <nz-form-control [nzSm]="19" nzHasFeedback>
+        <input nz-input formControlName="code" [(ngModel)]="dingTalkConfig.code" id="code">
+        <nz-form-explain *ngIf="form.get('code').dirty&&form.get('code').hasError('required')">请输入编码
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item nz-row>
+      <nz-form-label [nzSm]="5" [nzXs]="24" nzFor="value">配置项</nz-form-label>
+      <nz-form-control [nzSm]="19" nzHasFeedback>
+        <input nz-input formControlName="value" [(ngModel)]="dingTalkConfig.value" id="value">
+        <nz-form-explain *ngIf="form.get('value').dirty&&form.get('value').hasError('maxlength')">字符长度小于等于500
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item nz-row>
+      <nz-form-label [nzSm]="5" [nzXs]="24" nzFor="remark">备注</nz-form-label>
+      <nz-form-control [nzSm]="19" nzHasFeedback>
+        <input nz-input formControlName="remark" [(ngModel)]="dingTalkConfig.remark" id="remark">
+        <nz-form-explain *ngIf="form.get('remark').dirty&&form.get('remark').hasError('maxlength')">字符长度小于等于500
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item nz-row>
+      <nz-form-label nz-col [nzSm]="5" [nzXs]="24" nzFor="seq">序号</nz-form-label>
+      <nz-form-control [nzSm]="19" nzHasFeedback>
+        <input nz-input formControlName="seq" [(ngModel)]="dingTalkConfig.seq" id="seq">
+        <nz-form-explain *ngIf="form.get('seq').dirty&&form.get('seq').hasError('pattern')">请输入数字
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <div class="modal-footer">
+      <button nz-button type="button" [disabled]="saving" (click)="close()">
+        取消
+      </button>
+      <button nz-button [nzType]="'primary'" type="submit" [disabled]="!validateForm.valid||saving">
+        保存
+      </button>
+    </div>
+
+  </form>
+</div>
