@@ -9,7 +9,7 @@ import { HeaderStorageComponent } from './default/header/components/storage.comp
 import { HeaderUserComponent } from './default/header/components/user.component';
 import { YoYoSidebarNavComponent } from './default/sidebar/components/yoyo-sidebar-nav.component';
 import { LayoutDefaultComponent } from './default/layout-default.component';
-import { ChangePasswordComponent } from './default/change-password/change-password.component';
+//import { ChangePasswordComponent } from './default/change-password/change-password.component';
 import { HeaderNotifyComponent } from '@layout/default/header/components/notify.component';
 
 const COMPONENTS = [
@@ -31,6 +31,23 @@ const SIDEBARCOMPONENTS = [
   YoYoSidebarNavComponent
 ]
 
+import { LayoutModule as CDKLayoutModule } from '@angular/cdk/layout';
+import { LayoutSimpleComponent } from './simple/simple.component';
+import { LayoutSimpleSidebarComponent } from './simple/sidebar/sidebar.component';
+import { LayoutSimpleHeaderComponent } from './simple/header/header.component';
+import { LayoutSimpleHeaderUserComponent } from './simple/header/components/user.component';
+import { LayoutSimpleHeaderSearchComponent } from './simple/header/components/search.component';
+import { ChangePasswordComponent } from './simple/change-password/change-password.component';
+import { HeaderIconComponent } from './simple/header/components/icon.component';
+
+const SIMPLE = [
+  LayoutSimpleSidebarComponent,
+  LayoutSimpleHeaderComponent,
+  LayoutSimpleHeaderUserComponent,
+  LayoutSimpleHeaderSearchComponent,
+  LayoutSimpleComponent,
+  HeaderIconComponent,
+];
 // passport
 
 
@@ -42,9 +59,14 @@ const SIDEBARCOMPONENTS = [
     ...COMPONENTS,
     ...HEADERCOMPONENTS,
     ...SIDEBARCOMPONENTS,
+    ...SIMPLE
   ],
   exports: [
-    ...COMPONENTS
+    ...COMPONENTS,
+    ...SIMPLE
+  ],
+  entryComponents: [
+    ChangePasswordComponent
   ],
   providers: [],
 })

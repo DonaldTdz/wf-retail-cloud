@@ -16280,3 +16280,296 @@ DEBUG 2019-06-12 18:14:06,992 [6    ] Quartz.Core.QuartzSchedulerThread        -
 DEBUG 2019-06-12 18:14:30,174 [6    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
 DEBUG 2019-06-12 18:14:55,708 [6    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
 DEBUG 2019-06-12 18:15:22,184 [6    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:18:32,407 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-06-12 18:18:32,485 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2019-06-12 18:18:32,506 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: WF.RetailCloud.Web.Host.Startup.RetailCloudWebHostModule, WF.RetailCloud.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: WF.RetailCloud.RetailCloudWebCoreModule, WF.RetailCloud.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: WF.RetailCloud.RetailCloudApplicationModule, WF.RetailCloud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: WF.RetailCloud.RetailCloudCoreModule, WF.RetailCloud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Quartz.AbpQuartzModule, Abp.Quartz, Version=4.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: WF.RetailCloud.EntityFrameworkCore.RetailCloudEntityFrameworkModule, WF.RetailCloud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,512 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,512 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,512 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:32,515 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+INFO  2019-06-12 18:18:32,780 [1    ] Quartz.Impl.StdSchedulerFactory          - Default Quartz.NET properties loaded from embedded resource file
+DEBUG 2019-06-12 18:18:32,838 [1    ] Quartz.Simpl.TaskSchedulingThreadPool    - TaskSchedulingThreadPool configured with max concurrency of 10 and TaskScheduler ThreadPoolTaskScheduler.
+INFO  2019-06-12 18:18:32,860 [1    ] Quartz.Core.SchedulerSignalerImpl        - Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+INFO  2019-06-12 18:18:32,869 [1    ] Quartz.Core.QuartzScheduler              - Quartz Scheduler v.3.0.7.0 created.
+INFO  2019-06-12 18:18:32,870 [1    ] Quartz.Simpl.RAMJobStore                 - RAMJobStore initialized.
+INFO  2019-06-12 18:18:32,877 [1    ] Quartz.Core.QuartzScheduler              - Scheduler meta-data: Quartz Scheduler (v3.0.7.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  2019-06-12 18:18:32,877 [1    ] Quartz.Impl.StdSchedulerFactory          - Quartz scheduler 'DefaultQuartzScheduler' initialized
+INFO  2019-06-12 18:18:32,877 [1    ] Quartz.Impl.StdSchedulerFactory          - Quartz scheduler version: 3.0.7.0
+INFO  2019-06-12 18:18:32,878 [1    ] Quartz.Core.QuartzScheduler              - JobFactory set to: Abp.Quartz.AbpQuartzJobFactory
+INFO  2019-06-12 18:18:32,879 [1    ] Quartz.Impl.StdSchedulerFactory          - Default Quartz.NET properties loaded from embedded resource file
+INFO  2019-06-12 18:18:32,879 [1    ] Quartz.Core.QuartzScheduler              - JobFactory set to: Abp.Quartz.AbpQuartzJobFactory
+DEBUG 2019-06-12 18:18:32,908 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-06-12 18:18:32,908 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-06-12 18:18:32,908 [1    ] o.Configuration.LanguageManagementConfig - Converted RetailCloud (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-06-12 18:18:32,908 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-06-12 18:18:33,301 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: WF.RetailCloud.EntityFrameworkCore.RetailCloudDbContext, WF.RetailCloud.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-06-12 18:18:34,133 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-06-12 18:18:34,190 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-06-12 18:18:34,223 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-06-12 18:18:34,227 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: RetailCloud
+DEBUG 2019-06-12 18:18:34,249 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-06-12 18:18:34,416 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-06-12 18:18:34,454 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2019-06-12 18:18:34,454 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-06-12 18:18:34,461 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Wechat.Users.Dtos.WechatUserListDto
+DEBUG 2019-06-12 18:18:34,461 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Wechat.Subscribes.Dtos.WechatSubscribeEditDto
+DEBUG 2019-06-12 18:18:34,461 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Wechat.Messages.Dtos.WechatMessageEditDto
+DEBUG 2019-06-12 18:18:34,461 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Users.Dto.CreateUserDto
+DEBUG 2019-06-12 18:18:34,462 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Users.Dto.UserDto
+DEBUG 2019-06-12 18:18:34,462 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-06-12 18:18:34,462 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-06-12 18:18:34,462 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Roles.Dto.CreateRoleDto
+DEBUG 2019-06-12 18:18:34,462 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Roles.Dto.PermissionDto
+DEBUG 2019-06-12 18:18:34,462 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.Roles.Dto.RoleDto
+DEBUG 2019-06-12 18:18:34,463 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-06-12 18:18:34,463 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.MultiTenancy.Dto.TenantDto
+DEBUG 2019-06-12 18:18:34,463 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - WF.RetailCloud.DingTalk.Employees.Dtos.DingDingUserDto
+INFO  2019-06-12 18:18:34,687 [1    ] Quartz.Impl.StdSchedulerFactory          - Default Quartz.NET properties loaded from embedded resource file
+DEBUG 2019-06-12 18:18:34,689 [1    ] Abp.Quartz.QuartzScheduleJobManager      - Start background worker: Abp.Quartz.QuartzScheduleJobManager
+INFO  2019-06-12 18:18:34,690 [1    ] Quartz.Impl.StdSchedulerFactory          - Default Quartz.NET properties loaded from embedded resource file
+INFO  2019-06-12 18:18:34,703 [1    ] Quartz.Core.QuartzScheduler              - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  2019-06-12 18:18:34,703 [1    ] Abp.Quartz.QuartzScheduleJobManager      - Started QuartzScheduleJobManager
+INFO  2019-06-12 18:18:34,704 [1    ] Quartz.Impl.StdSchedulerFactory          - Default Quartz.NET properties loaded from embedded resource file
+DEBUG 2019-06-12 18:18:34,704 [1    ] Abp.Quartz.QuartzScheduleJobManager      - Start background worker: Abp.Quartz.QuartzScheduleJobManager
+INFO  2019-06-12 18:18:34,704 [1    ] Quartz.Impl.StdSchedulerFactory          - Default Quartz.NET properties loaded from embedded resource file
+INFO  2019-06-12 18:18:34,705 [1    ] Quartz.Core.QuartzScheduler              - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+INFO  2019-06-12 18:18:34,705 [1    ] Abp.Quartz.QuartzScheduleJobManager      - Started QuartzScheduleJobManager
+DEBUG 2019-06-12 18:18:34,706 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+INFO  2019-06-12 18:18:38,889 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/  
+INFO  2019-06-12 18:18:38,889 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:21022/  0
+INFO  2019-06-12 18:18:38,959 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 75.781ms 200 
+WARN  2019-06-12 18:18:39,029 [13   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:18:39,031 [13   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:18:41,843 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action WF.RetailCloud.Web.Host.Controllers.HomeController.Index (WF.RetailCloud.Web.Host)
+INFO  2019-06-12 18:18:42,600 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method WF.RetailCloud.Web.Host.Controllers.HomeController.Index (WF.RetailCloud.Web.Host) - Validation state: Valid
+INFO  2019-06-12 18:18:42,606 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method WF.RetailCloud.Web.Host.Controllers.HomeController.Index (WF.RetailCloud.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2.4169ms.
+INFO  2019-06-12 18:18:42,875 [14   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-06-12 18:18:42,890 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action WF.RetailCloud.Web.Host.Controllers.HomeController.Index (WF.RetailCloud.Web.Host) in 1042.3458ms
+INFO  2019-06-12 18:18:42,906 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4024.0722ms 302 
+INFO  2019-06-12 18:18:42,909 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/swagger/index.html  
+WARN  2019-06-12 18:18:42,913 [14   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:18:42,914 [14   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:18:42,944 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.1359ms 200 text/html
+INFO  2019-06-12 18:18:42,957 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/swagger/swagger-ui.css  
+INFO  2019-06-12 18:18:42,959 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/swagger/swagger-ui-bundle.js  
+WARN  2019-06-12 18:18:42,961 [6    ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:18:42,963 [12   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:18:42,964 [6    ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:18:42,966 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/swagger/swagger-ui-standalone-preset.js  
+WARN  2019-06-12 18:18:42,968 [12   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:18:42,970 [9    ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:18:42,972 [9    ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:18:42,992 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-06-12 18:18:42,993 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-06-12 18:18:42,995 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-06-12 18:18:42,999 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34.1253ms 304 application/javascript
+INFO  2019-06-12 18:18:43,003 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.0192ms 304 text/css
+INFO  2019-06-12 18:18:43,005 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.1564ms 304 application/javascript
+INFO  2019-06-12 18:18:44,079 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/swagger/v1/swagger.json  
+WARN  2019-06-12 18:18:44,081 [12   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:18:44,082 [12   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:18:44,302 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 222.8823ms 200 application/json;charset=utf-8
+DEBUG 2019-06-12 18:18:59,242 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:19:24,229 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:19:48,856 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:20:18,661 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:20:46,378 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+INFO  2019-06-12 18:20:49,056 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:20:49,066 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:20:49,077 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 21.4442ms 204 
+INFO  2019-06-12 18:20:49,084 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:20:49,085 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:20:49,088 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:20:49,090 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:20:49,108 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-06-12 18:20:49,109 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:20:49,113 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-06-12 18:20:49,871 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 755.883ms.
+INFO  2019-06-12 18:20:50,004 [18   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:20:50,057 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 945.9959ms
+INFO  2019-06-12 18:20:50,060 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 975.7568ms 200 application/json; charset=utf-8
+INFO  2019-06-12 18:20:50,071 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:20:50,073 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:20:50,075 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.3322ms 204 
+INFO  2019-06-12 18:20:50,080 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:20:50,082 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:20:50,084 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:20:50,085 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:20:50,101 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application)
+INFO  2019-06-12 18:20:50,103 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:20:50,476 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) - Validation state: Valid
+INFO  2019-06-12 18:20:50,548 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 69.9844ms.
+INFO  2019-06-12 18:20:50,568 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:20:50,582 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) in 479.2162ms
+INFO  2019-06-12 18:20:50,584 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 503.3615ms 200 application/json; charset=utf-8
+INFO  2019-06-12 18:20:51,031 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:20:51,033 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:20:51,035 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.9236ms 204 
+INFO  2019-06-12 18:20:51,047 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:20:51,049 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:20:51,051 [16   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:20:51,053 [16   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:20:51,061 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-06-12 18:20:51,062 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:20:51,065 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-06-12 18:20:51,076 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 9.8241ms.
+INFO  2019-06-12 18:20:51,097 [21   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:20:51,100 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 37.2226ms
+INFO  2019-06-12 18:20:51,102 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 55.0837ms 200 application/json; charset=utf-8
+INFO  2019-06-12 18:20:51,150 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:20:51,152 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:20:51,155 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.1343ms 204 
+INFO  2019-06-12 18:20:51,177 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:20:51,179 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:20:51,183 [16   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:20:51,184 [16   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:20:51,192 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application)
+INFO  2019-06-12 18:20:51,194 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:20:51,200 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) - Validation state: Valid
+INFO  2019-06-12 18:20:51,235 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 33.293ms.
+INFO  2019-06-12 18:20:51,244 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:20:51,246 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) in 51.9748ms
+INFO  2019-06-12 18:20:51,249 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 74.5517ms 200 application/json; charset=utf-8
+DEBUG 2019-06-12 18:21:10,131 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+INFO  2019-06-12 18:21:33,586 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:21:33,589 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:21:33,592 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.0751ms 204 
+INFO  2019-06-12 18:21:33,615 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:21:33,617 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:21:33,618 [27   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:21:33,620 [27   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:21:33,625 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-06-12 18:21:33,631 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:21:33,633 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-06-12 18:21:33,643 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 8.1572ms.
+INFO  2019-06-12 18:21:33,698 [26   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:21:33,700 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 73.0657ms
+INFO  2019-06-12 18:21:33,703 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 86.6434ms 200 application/json; charset=utf-8
+INFO  2019-06-12 18:21:33,715 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:21:33,716 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:21:33,718 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.8239ms 204 
+INFO  2019-06-12 18:21:33,724 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:21:33,725 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:21:33,727 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:21:33,729 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:21:33,734 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application)
+INFO  2019-06-12 18:21:33,735 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:21:33,739 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) - Validation state: Valid
+INFO  2019-06-12 18:21:33,747 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 6.7894ms.
+INFO  2019-06-12 18:21:33,750 [26   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:21:33,753 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) in 16.6618ms
+INFO  2019-06-12 18:21:33,754 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.4497ms 200 application/json; charset=utf-8
+DEBUG 2019-06-12 18:21:34,554 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+INFO  2019-06-12 18:21:35,590 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:21:35,592 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:21:35,594 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.8283ms 204 
+INFO  2019-06-12 18:21:35,608 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:21:35,610 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:21:35,612 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:21:35,613 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:21:35,617 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-06-12 18:21:35,618 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:21:35,621 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-06-12 18:21:35,631 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 8.5705ms.
+INFO  2019-06-12 18:21:35,649 [26   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:21:35,651 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 32.5165ms
+INFO  2019-06-12 18:21:35,653 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 44.5906ms 200 application/json; charset=utf-8
+INFO  2019-06-12 18:21:35,668 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:21:35,670 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:21:35,672 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.9272ms 204 
+INFO  2019-06-12 18:21:35,678 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:21:35,679 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:21:35,681 [19   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:21:35,682 [19   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:21:35,686 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application)
+INFO  2019-06-12 18:21:35,687 [19   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:21:35,690 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) - Validation state: Valid
+INFO  2019-06-12 18:21:35,697 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.3156ms.
+INFO  2019-06-12 18:21:35,700 [17   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:21:35,701 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) in 14.128ms
+INFO  2019-06-12 18:21:35,703 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.2279ms 200 application/json; charset=utf-8
+DEBUG 2019-06-12 18:22:02,992 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+INFO  2019-06-12 18:22:13,425 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:22:13,426 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:22:13,428 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.4761ms 204 
+INFO  2019-06-12 18:22:13,451 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:22:13,453 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:22:13,454 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:22:13,456 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:22:13,459 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-06-12 18:22:13,461 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:22:13,463 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-06-12 18:22:13,470 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 4.726ms.
+INFO  2019-06-12 18:22:13,508 [17   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:22:13,509 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 48.7227ms
+INFO  2019-06-12 18:22:13,511 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 60.0433ms 200 application/json; charset=utf-8
+INFO  2019-06-12 18:22:13,521 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:22:13,523 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:22:13,524 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.4473ms 204 
+INFO  2019-06-12 18:22:13,533 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:22:13,534 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:22:13,536 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:22:13,537 [11   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:22:13,541 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application)
+INFO  2019-06-12 18:22:13,542 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:22:13,545 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) - Validation state: Valid
+INFO  2019-06-12 18:22:13,553 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 6.4369ms.
+INFO  2019-06-12 18:22:13,556 [29   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:22:13,558 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) in 15.8321ms
+INFO  2019-06-12 18:22:13,560 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.7446ms 200 application/json; charset=utf-8
+DEBUG 2019-06-12 18:22:31,501 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+INFO  2019-06-12 18:22:46,685 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:22:46,687 [30   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:22:46,689 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.2291ms 204 
+INFO  2019-06-12 18:22:46,709 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/AbpUserConfiguration/GetAll  
+INFO  2019-06-12 18:22:46,710 [30   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:22:46,712 [30   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:22:46,713 [30   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:22:46,718 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-06-12 18:22:46,719 [30   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:22:46,721 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-06-12 18:22:46,728 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 5.6038ms.
+INFO  2019-06-12 18:22:46,766 [29   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:22:46,768 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 48.7156ms
+INFO  2019-06-12 18:22:46,769 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 60.348ms 200 application/json; charset=utf-8
+INFO  2019-06-12 18:22:46,778 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:22:46,780 [30   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:22:46,781 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.61ms 204 
+INFO  2019-06-12 18:22:46,788 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21022/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-06-12 18:22:46,789 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+WARN  2019-06-12 18:22:46,790 [27   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures 'zh-CN, zh'.
+WARN  2019-06-12 18:22:46,791 [27   ] calization.RequestLocalizationMiddleware - AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures 'zh-CN, zh'.
+INFO  2019-06-12 18:22:46,795 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application)
+INFO  2019-06-12 18:22:46,796 [27   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-06-12 18:22:46,799 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) - Validation state: Valid
+INFO  2019-06-12 18:22:46,807 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 6.3806ms.
+INFO  2019-06-12 18:22:46,809 [29   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-06-12 18:22:46,811 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action WF.RetailCloud.Sessions.SessionAppService.GetCurrentLoginInformations (WF.RetailCloud.Application) in 14.1576ms
+INFO  2019-06-12 18:22:46,812 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.093ms 200 application/json; charset=utf-8
+DEBUG 2019-06-12 18:22:59,338 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:23:26,370 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:23:51,451 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:24:16,765 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:24:43,695 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:25:11,509 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:25:40,699 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers
+DEBUG 2019-06-12 18:26:07,779 [7    ] Quartz.Core.QuartzSchedulerThread        - Batch acquisition of 0 triggers

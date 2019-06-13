@@ -1,0 +1,40 @@
+<ng-template #sideTpl>
+  <nz-sider [nzTrigger]="null" [nzCollapsible]="true" [nzCollapsed]="settings.layout.collapsed" [nzWidth]="width"
+    class="layout-simple__sider" [class.light]="theme === 'light'">
+    <div class="layout-simple__logo" key="logo">
+      <a [routerLink]="['/']">
+        <img src="./assets/logo01.png" alt="咿呀亲贝O2O平台" />
+        <!--<h1>{{settings.app.name}}</h1>-->
+        <h1>咿呀亲贝O2O</h1>
+      </a>
+    </div>
+    <layout-simple-sidebar [isMobile]="isMobile" [theme]="theme"></layout-simple-sidebar>
+  </nz-sider>
+</ng-template>
+<div class="ant-layout ant-layout-has-sider">
+  <div *ngIf="isMobile" class="ls__drawer" [class.ls__drawer-open]="!settings.layout.collapsed">
+    <div class="ls__drawer-bg" [hidden]="settings.layout.collapsed" (click)="toggleCollapsedSidebar()"></div>
+    <div class="ls__drawer-wrapper" [ngStyle]="{
+      'width.px': width,
+      'left.px': -width,
+      'transform': !settings.layout.collapsed ? 'translateX(256px)' : null
+    }">
+      <div class="ls__drawer-content">
+        <ng-template [ngTemplateOutlet]="sideTpl"></ng-template>
+      </div>
+    </div>
+  </div>
+  <ng-container *ngIf="!isMobile">
+    <ng-template [ngTemplateOutlet]="sideTpl"></ng-template>
+  </ng-container>
+  <div class="ant-layout" [style.padding-left]="settings.layout.collapsed? '80px' : '256px'">
+    <div class="ant-layout-header">
+      <layout-simple-header [isMobile]="isMobile" [style.padding-left]="settings.layout.collapsed? '80px' : '256px'">
+      </layout-simple-header>
+    </div>
+    <div class="ant-layout-content" style="margin: 0 10px 0px; height: 100%; padding-top: 64px; ">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="ant-layout-footer"></div>
+  </div>
+</div>

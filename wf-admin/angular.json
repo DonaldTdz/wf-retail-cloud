@@ -23,7 +23,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/favicon-1.ico",
               "src/assets",
               {
                 "glob": "**/*",
@@ -115,7 +115,7 @@
               "node_modules/ajv/dist/ajv.bundle.js"
             ],
             "assets": [
-              "src/favicon.ico",
+              "src/favicon-1.ico",
               "src/assets"
             ]
           }

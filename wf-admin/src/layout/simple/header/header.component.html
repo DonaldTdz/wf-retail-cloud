@@ -1,0 +1,66 @@
+<ng-container *ngIf="isMobile">
+  <a [routerLink]="['/']" class="logo">
+    <!--<img src="./assets/logo2.png" alt="零售终端" width="32" />-->
+    O2O
+  </a>
+  <div class="ant-divider ant-divider-vertical"></div>
+</ng-container>
+<div class="alain-default__nav-wrap">
+  <ul class="alain-default__nav">
+    <!-- Menu -->
+    <li>
+      <div class="alain-default__nav-item simple-header-color" (click)="toggleCollapsedSidebar()">
+        <i nz-icon type="menu-{{settings.layout.collapsed ? 'unfold' : 'fold'}}"></i>
+      </div>
+    </li>
+    <!--
+<i (click)="toggleCollapsedSidebar()" class="anticon anticon-menu-{{settings.layout.collapsed ? 'unfold' : 'fold'}} trigger">
+</i>
+    -->
+    <!-- Lock Page -->
+    <!-- <li class="hidden-mobile">
+      <div class="alain-default__nav-item simple-header-color" [routerLink]="['/lock']">
+        <i nz-icon type="lock"></i>
+      </div>
+    </li> -->
+  </ul>
+  <!--Search-->
+  <!-- <layout-simple-header-search></layout-simple-header-search> -->
+  <!--Link-->
+  <!--<nz-tooltip nzTitle="使用文档" nzPlacement="bottom">
+    <a nz-tooltip target="_blank" href="https://ng-alain.com/" rel="noopener noreferrer" class="item">
+      <i class="anticon anticon-question-circle-o"></i>
+    </a>
+  </nz-tooltip>-->
+  <!--User-->
+  <!-- <layout-simple-header-user></layout-simple-header-user>  -->
+  <ul class="alain-default__nav">
+    <!-- Notify -->
+    <!-- <li class="simple-header-color">
+      <header-notify class="simple-header-color"></header-notify>
+    </li> -->
+    <!-- App Icons -->
+    <li class="hidden-mobile">
+      <header-icon></header-icon>
+    </li>
+    <!-- Settings -->
+    <li class="hidden-mobile">
+      <nz-dropdown nzTrigger="click" nzPlacement="bottomRight">
+        <div class="alain-default__nav-item simple-header-color" nz-dropdown>
+          <i nz-icon type="setting"></i>
+        </div>
+        <div nz-menu style="width:200px;">
+          <div nz-menu-item>
+            <header-fullscreen></header-fullscreen>
+          </div>
+          <!-- <div nz-menu-item>
+            <header-storage></header-storage>
+          </div> -->
+        </div>
+      </nz-dropdown>
+    </li>
+    <li class="hidden-mobile">
+      <layout-simple-header-user></layout-simple-header-user>
+    </li>
+  </ul>
+</div>

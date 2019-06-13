@@ -73,9 +73,10 @@
                         <td>{{item.content}}</td>
                         <td>{{item.url}}</td>
                         <td>
-                            <a (click)="edit(item)">编辑</a>
-                            <nz-divider nzType="vertical"></nz-divider>
-                            <a style="color:#ff4d4f;" (click)="delete(item)">删除</a>
+                            <button nz-button nzType="primary" (click)="edit(item)" [nzSize]="'small'"
+                                nzShape="round"><i nz-icon type="edit"></i>编辑</button>
+                            <button nz-button nzType="danger" (click)="delete(item)" [nzSize]="'small'"
+                                nzShape="round"><i nz-icon type="delete"></i>删除</button>
                         </td>
                     </tr>
                 </tbody>

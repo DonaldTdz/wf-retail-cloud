@@ -65,10 +65,10 @@
         <td nz-td>{{ding.seq}}
         </td>
         <td nz-td>
-          <a (click)="editDing(ding)">编辑</a>
-          <span nz-table-divider></span>
-          <nz-divider nzType="vertical"></nz-divider>
-          <a style="color:#ff4d4f;" (click)="delete(ding)">删除</a>
+          <button nz-button nzType="primary" (click)="editDing(ding)" [nzSize]="'small'" nzShape="round"><i nz-icon
+              type="edit"></i>编辑</button>
+          <button nz-button nzType="danger" (click)="delete(ding)" [nzSize]="'small'" nzShape="round"><i nz-icon
+              type="delete"></i>删除</button>
         </td>
       </tr>
     </tbody>
