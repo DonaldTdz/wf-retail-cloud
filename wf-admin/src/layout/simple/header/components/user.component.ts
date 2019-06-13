@@ -4,14 +4,15 @@ import { SettingsService, ModalHelper } from '@delon/theme';
 //import { DA_SERVICE_TOKEN, ITokenService } from '@delon/auth';
 import { ChangePasswordComponent } from '../../change-password/change-password.component';
 import { AppAuthService } from '@shared/auth';
+import { AppSessionService } from '@shared/session/app-session.service';
 
 @Component({
   selector: 'layout-simple-header-user',
   template: `
   <nz-dropdown nzPlacement="bottomRight">
     <div class="alain-default__nav-item d-flex align-items-center px-sm" style="color: rgba(0,0,0,.85)" nz-dropdown>
-      <nz-avatar [nzSrc]="settings.user.avatar" nzSize="small" class="mr-sm"></nz-avatar>
-      {{settings.user.name}}
+      <nz-avatar [nzSrc]="'assets/avatar.jpg'" nzSize="small" class="mr-sm"></nz-avatar>
+      {{userName}}
     </div>
     <div nz-menu class="width-sm">
       <div nz-menu-item routerLink="/pro/account/center"><i nz-icon type="user" class="mr-sm"></i>
@@ -30,14 +31,17 @@ import { AppAuthService } from '@shared/auth';
 })
 export class LayoutSimpleHeaderUserComponent {
   modalHelper: ModalHelper;
+  userName: string;
   constructor(
     public settings: SettingsService,
+    private appSession: AppSessionService,
     private router: Router,
     injector: Injector,
     //@Inject(DA_SERVICE_TOKEN) private tokenService: ITokenService,
     private _authService: AppAuthService
   ) {
     this.modalHelper = injector.get(ModalHelper);
+    this.userName = this.appSession.user.name;
   }
 
   changePassword(): void {
