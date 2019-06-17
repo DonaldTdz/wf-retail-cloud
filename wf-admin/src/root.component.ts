@@ -11,6 +11,7 @@ import { TitleService, VERSION as VERSION_ALAIN } from '@delon/theme';
 import { MessageExtension } from '@shared/helpers/message.extension';
 
 import { preloaderFinished } from '@delon/theme';
+import { SignalRAspNetCoreHelper } from '@shared/helpers/SignalRAspNetCoreHelper';
 preloaderFinished();
 
 @Component({
@@ -53,6 +54,9 @@ export class RootComponent implements OnInit {
 
     //  覆盖abp.notify替换为ng-zorro的notify
     MessageExtension.overrideAbpNotify(this._notifyService);
+
+    //signalR
+    SignalRAspNetCoreHelper.initSignalR(function () { alert('SignalR 加载成功'); });
 
     //  设置标题
     this.titleSrv.prefix = '咿呀亲贝O2O';

@@ -14,23 +14,6 @@ import { NzNotificationService } from 'ng-zorro-antd';
   animations: [appModuleAnimation()],
 })
 export class HomeComponent extends AppComponentBase implements OnInit {
-
-  homeInfo: any;
-  integralStatis = [];
-  goodsStatis = [];
-  integralMoth = [];
-  integralStatisData = [];
-  goodsStatisData = [];
-  integralMothData = [];
-  inTotal: number;
-  goodTotal: number;
-  inMoth = { growthTotal: null, depleteTotal: null }
-  searchMoth = 2;
-  tags = [
-    { value: 1, text: '近半年' },
-    { value: 2, text: '近一年' },
-  ];
-  colors = ['#1890ff', '#eb2f96'];
   constructor(
     injector: Injector, private http: _HttpClient, public msg: NzMessageService,
     private aclService: ACLService, private homeService: HomeService,
@@ -44,6 +27,8 @@ export class HomeComponent extends AppComponentBase implements OnInit {
       nzPlacement: 'bottomRight',
       nzDuration: 120000
     });
+
+
   }
 
 
