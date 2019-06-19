@@ -1472,6 +1472,33 @@ namespace WF.RetailCloud.Migrations
             });
 
             #endregion
+
+            #region Common
+
+            modelBuilder.Entity("WF.RetailCloud.DataDictionarys.DataDictionary", b =>
+            {
+                b.Property<long>("Id")
+                    .ValueGeneratedOnAdd();
+
+                b.Property<int>("Group").IsRequired();
+
+                b.Property<string>("Code").HasMaxLength(50).IsRequired();
+
+                b.Property<string>("Value").HasMaxLength(500);
+
+                b.Property<string>("Desc").HasMaxLength(500);
+
+                b.Property<int?>("Seq");
+
+                b.Property<DateTime>("CreationTime");
+
+                b.HasKey("Id");
+
+            });
+
+            #endregion
+
+
         }
     }
 }
