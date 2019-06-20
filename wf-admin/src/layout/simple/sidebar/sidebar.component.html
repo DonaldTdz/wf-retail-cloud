@@ -1,0 +1,46 @@
+<ng-template #icon let-i>
+  <ng-container *ngIf="i" [ngSwitch]="i.type">
+    <i *ngSwitchCase="'icon'" class="sidebar-nav__item-icon" nz-icon [type]="i.value" [theme]="i.theme" [spin]="i.spin"
+      [style.font-size]="collapsed? '20px':'16px'" [twoToneColor]="i.twoToneColor" [iconfont]="i.iconfont"></i>
+    <img *ngSwitchCase="'img'" src="{{ i.value }}" class="sidebar-nav__item-icon sidebar-nav__item-img">
+    <i *ngSwitchDefault class="sidebar-nav__item-icon {{ i.value }}"></i>
+  </ng-container>
+</ng-template>
+<ul *ngIf="menus" nz-menu nzMode="inline" [nzTheme]="theme" [nzInlineCollapsed]="settings.layout.collapsed"
+  class="layout-simple__menu">
+  <ng-container *ngFor="let l1 of menus">
+    <li *ngIf="l1.children.length === 0" nz-menu-item [class.ant-menu-item-selected]="l1._selected" (click)="click(l1)">
+      <span *ngIf="!collapsed">
+        <!--<i nz-icon class="{{l1.icon.value}}" [style.font-size]="'14px'"></i>-->
+        <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{$implicit: l1.icon}"></ng-template>
+        <span>{{l1.text}}</span>
+      </span>
+      <span *ngIf="collapsed" nz-tooltip nzPlacement="right" [nzTitle]="l1.text">
+        <!--<i nz-icon class="{{l1.icon.value}}" [style.font-size]="'20px'"></i>-->
+        <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{$implicit: l1.icon}"></ng-template>
+      </span>
+    </li>
+    <li *ngIf="l1.children.length > 0" nz-submenu [nzOpen]="l1._open">
+      <span title>
+        <!--<i nz-icon class="{{l1.icon.value}}" [style.font-size]="collapsed? '20px':'14px'"></i>-->
+        <ng-template [ngTemplateOutlet]="icon" [ngTemplateOutletContext]="{$implicit: l1.icon}"></ng-template>
+        <span>{{l1.text}}</span>
+      </span>
+      <ul>
+        <ng-container *ngFor="let l2 of l1.children">
+          <li *ngIf="l2.children.length === 0" nz-menu-item [class.ant-menu-item-selected]="l2._selected"
+            (click)="click(l2)">
+            {{l2.text}}
+          </li>
+          <li *ngIf="l2.children.length > 0" nz-submenu [nzOpen]="l2._open">
+            <span title><span>{{l2.text}}</span></span>
+            <ul>
+              <li *ngFor="let l3 of l2.children" nz-menu-item [class.ant-menu-item-selected]="l3._selected"
+                (click)="click(l3)">{{l3.text}}</li>
+            </ul>
+          </li>
+        </ng-container>
+      </ul>
+    </li>
+  </ng-container>
+</ul>
