@@ -4,6 +4,6 @@
 .vs/
 obj/
 bin/
-aspnet-core/src/HC.AbpCore.Web.Host/App_Data/Logs/
-aspnet-core/src/HC.AbpCore.Web.Mvc/App_Data/Logs/
-aspnet-core/src/HC.AbpCore.Migrator/Logs/Logs.txt
+aspnet-core/src/WF.RetailCloud.Web.Host/App_Data/Logs/
+aspnet-core/src/WF.RetailCloud.Web.Mvc/App_Data/Logs/
+aspnet-core/src/WF.RetailCloud.Migrator/Logs/Logs.txt
