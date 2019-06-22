@@ -4,6 +4,7 @@ import {
   ElementRef,
   Renderer2,
   Inject,
+  OnInit
 } from '@angular/core';
 import {
   Router,
@@ -15,6 +16,7 @@ import { BreakpointObserver, MediaMatcher } from '@angular/cdk/layout';
 import { NzMessageService, NzModalService } from 'ng-zorro-antd';
 import { ScrollService, SettingsService, Menu } from '@delon/theme';
 import { updateHostClass } from '@delon/util';
+import { SignalRAspNetCoreHelper } from '@shared/helpers/SignalRAspNetCoreHelper';
 //import { TokenService, DA_SERVICE_TOKEN } from '@delon/auth';
 
 @Component({
@@ -23,7 +25,7 @@ import { updateHostClass } from '@delon/util';
   styleUrls: ['./simple.component.less', './theme.less'],
   encapsulation: ViewEncapsulation.None,
 })
-export class LayoutSimpleComponent {
+export class LayoutSimpleComponent implements OnInit {
   width = 256;
   isFetching = false;
   isMobile = false;
@@ -109,4 +111,26 @@ export class LayoutSimpleComponent {
       typeof status !== 'undefined' ? status : !this.settings.layout.collapsed,
     );
   }
+
+  ngOnInit(): void {
+
+    SignalRAspNetCoreHelper.initSignalR(function () { });
+
+    abp.event.on('abp.notifications.received', userNotification => {
+      console.log(userNotification);
+      abp.notifications.showUiNotifyForUserNotification(userNotification);
+
+      // Desktop notification
+      /*Push.create('AbpZeroTemplate', {
+        body: userNotification.notification.data.message,
+        icon: abp.appPath + 'assets/app-logo-small.png',
+        timeout: 6000,
+        onClick: function () {
+          window.focus();
+          this.close();
+        }
+      });*/
+    });
+  }
+
 }

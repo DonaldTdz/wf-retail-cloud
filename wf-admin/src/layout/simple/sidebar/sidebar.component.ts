@@ -59,9 +59,13 @@ export class LayoutSimpleSidebarComponent {
    */
   processMenuOpen(currentUrl: string, menus: Nav[], parentMenu?: Nav): void {
     menus.forEach(item => {
-      if (parentMenu && item.link === currentUrl) {
-        parentMenu._open = true;
+      if (item.link === currentUrl) {
+        if (parentMenu) {
+          parentMenu._open = true;
+        }
+        item._selected = true;
       }
+
       if (item.children && item.children.length > 0) {
         this.processMenuOpen(currentUrl, item.children, item);
       }

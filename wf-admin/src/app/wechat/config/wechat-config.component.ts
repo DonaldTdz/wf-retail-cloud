@@ -124,7 +124,7 @@ export class WechatConfigComponent extends PagedListingComponentBase<any> {
         this.subscribeService.update(this.wechatSubscribe).finally(() => {
             this.saving = false; this.isConfirmLoadingSa = false;
         }).subscribe(() => {
-            this.notify.success(this.l('SavedSuccessfully'));
+            this.notify.success('保存数据成功！');
             this.getSubScribe();
         })
     }

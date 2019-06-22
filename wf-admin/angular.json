@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-project": {
+    "wf-admin": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -29,6 +29,16 @@
                 "glob": "**/*",
                 "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
                 "output": "/assets/"
+              },
+              {
+                "glob": "abp.signalr.js",
+                "input": "node_modules/abp-web-resources/Abp/Framework/scripts/libs",
+                "output": "/assets/abp"
+              },
+              {
+                "glob": "abp.signalr-client.js",
+                "input": "node_modules/abp-web-resources/Abp/Framework/scripts/libs",
+                "output": "/assets/abp"
               }
             ],
             "styles": [
@@ -49,7 +59,7 @@
               "src/assets/abp-web-resources/abp.js",
               "src/assets/abp-web-resources/abp.sweet-alert.js",
               "src/assets/abp-web-resources/abp.notify.js",
-              "node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.moment.js",
+              "node_modules/abp-web-resources/Abp/Framework/scripts/libs/abp.moment.js"
             ]
           },
           "configurations": {
@@ -83,14 +93,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-project:build"
+            "browserTarget": "wf-admin:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-project:build:production"
+              "browserTarget": "wf-admin:build:production"
             },
             "hmr": {
-              "browserTarget": "my-project:build:hmr",
+              "browserTarget": "wf-admin:build:hmr",
               "hmr": true
             }
           }
@@ -98,7 +108,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-project:build"
+            "browserTarget": "wf-admin:build"
           }
         },
         "test": {
@@ -134,7 +144,7 @@
         }
       }
     },
-    "my-project-e2e": {
+    "wf-admin-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -142,11 +152,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-project:serve"
+            "devServerTarget": "wf-admin:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-project:serve:production"
+              "devServerTarget": "wf-admin:serve:production"
             }
           }
         },
@@ -162,7 +172,7 @@
       }
     }
   },
-  "defaultProject": "my-project",
+  "defaultProject": "wf-admin",
   "schematics": {
     "ng-alain:module": {
       "routing": true,

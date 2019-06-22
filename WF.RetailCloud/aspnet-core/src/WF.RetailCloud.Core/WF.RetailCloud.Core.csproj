@@ -36,4 +36,7 @@
       <HintPath>..\..\SDK\TopSdk.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Notifications\" />
+  </ItemGroup>
 </Project>

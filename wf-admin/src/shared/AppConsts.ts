@@ -18,7 +18,7 @@ export class AppConsts {
   };
 
   static readonly localization = {
-    defaultLocalizationSourceName: 'AbpCore',
+    defaultLocalizationSourceName: 'RetailCloud',
   };
 
   static readonly authorization = {

@@ -28,8 +28,8 @@
                 <input nz-input name="keyWord" #keyWord="ngModel" [(ngModel)]="wechatMessage.keyWord" maxlength="50"
                     autocomplete="keyWord" required>
                 <nz-form-explain *ngIf="keyWord.control.dirty&&keyWord.control.errors">
-                    <ng-container *ngIf="keyWord.control.hasError('required')">{{l('CanNotNull')}}</ng-container>
-                    <ng-container *ngIf="keyWord.control.hasError('maxlength')">{{l('MaxLength')}}</ng-container>
+                    <ng-container *ngIf="keyWord.control.hasError('required')">不能为空</ng-container>
+                    <ng-container *ngIf="keyWord.control.hasError('maxlength')">不能超过最大长度50</ng-container>
                 </nz-form-explain>
             </nz-form-control>
         </nz-form-item>
@@ -45,7 +45,7 @@
                     </label>
                 </nz-radio-group>
                 <nz-form-explain *ngIf="msgType.control.dirty&&msgType.control.errors">
-                    <ng-container *ngIf="msgType.control.hasError('required')">{{l('CanNotNull')}}</ng-container>
+                    <ng-container *ngIf="msgType.control.hasError('required')">不能为空</ng-container>
                 </nz-form-explain>
             </nz-form-control>
         </nz-form-item>
@@ -57,8 +57,8 @@
                 <textarea nz-input name="content" #content="ngModel" [(ngModel)]="wechatMessage.content" maxlength="200"
                     rows="6" autocomplete="content" [nzAutosize]="{ minRows: 6, maxRows: 10}" required></textarea>
                 <nz-form-explain *ngIf="content.control.dirty&&content.control.errors">
-                    <ng-container *ngIf="content.control.hasError('required')">{{l('CanNotNull')}}</ng-container>
-                    <ng-container *ngIf="content.control.hasError('maxlength')">{{l('MaxLength')}}</ng-container>
+                    <ng-container *ngIf="content.control.hasError('required')">不能为空</ng-container>
+                    <ng-container *ngIf="content.control.hasError('maxlength')">不能超过最大长度200</ng-container>
                 </nz-form-explain>
             </nz-form-control>
         </nz-form-item>
@@ -71,8 +71,8 @@
                     <input nz-input name="title" #title="ngModel" [(ngModel)]="wechatMessage.title" autocomplete="title"
                         maxlength="200" required>
                     <nz-form-explain *ngIf="title.control.dirty&&title.control.errors">
-                        <ng-container *ngIf="title.control.hasError('required')">{{l('CanNotNull')}}</ng-container>
-                        <ng-container *ngIf="title.control.hasError('maxlength')">{{l('MaxLength')}}</ng-container>
+                        <ng-container *ngIf="title.control.hasError('required')">不能为空</ng-container>
+                        <ng-container *ngIf="title.control.hasError('maxlength')">不能超过最大长度200</ng-container>
                     </nz-form-explain>
                 </nz-form-control>
             </nz-form-item>
@@ -85,8 +85,8 @@
                     <input nz-input name="picLink" #picLink="ngModel" [(ngModel)]="wechatMessage.picLink"
                         autocomplete="picLink" maxlength="200" required>
                     <nz-form-explain *ngIf="picLink.control.dirty&&picLink.control.errors">
-                        <ng-container *ngIf="picLink.control.hasError('required')">{{l('CanNotNull')}}</ng-container>
-                        <ng-container *ngIf="picLink.control.hasError('maxlength')">{{l('MaxLength')}}</ng-container>
+                        <ng-container *ngIf="picLink.control.hasError('required')">不能为空</ng-container>
+                        <ng-container *ngIf="picLink.control.hasError('maxlength')">不能超过最大长度200</ng-container>
                     </nz-form-explain>
                 </nz-form-control>
             </nz-form-item>
@@ -97,8 +97,8 @@
                     <input nz-input name="url" #url="ngModel" [(ngModel)]="wechatMessage.url" autocomplete="url"
                         maxlength="200" required>
                     <nz-form-explain *ngIf="url.control.dirty&&url.control.errors">
-                        <ng-container *ngIf="url.control.hasError('required')">{{l('CanNotNull')}}</ng-container>
-                        <ng-container *ngIf="url.control.hasError('maxlength')">{{l('MaxLength')}}</ng-container>
+                        <ng-container *ngIf="url.control.hasError('required')">不能为空</ng-container>
+                        <ng-container *ngIf="url.control.hasError('maxlength')">不能超过最大长度200</ng-container>
                     </nz-form-explain>
                 </nz-form-control>
             </nz-form-item>
@@ -110,8 +110,8 @@
                     <textarea nz-input name="desc" #desc="ngModel" [(ngModel)]="wechatMessage.desc" autocomplete="desc"
                         maxlength="200" required [nzAutosize]="{ minRows: 3, maxRows: 6 }"></textarea>
                     <nz-form-explain *ngIf="desc.control.dirty&&desc.control.errors">
-                        <ng-container *ngIf="desc.control.hasError('required')">{{l('CanNotNull')}}</ng-container>
-                        <ng-container *ngIf="desc.control.hasError('maxlength')">{{l('MaxLength')}}</ng-container>
+                        <ng-container *ngIf="desc.control.hasError('required')">不能为空</ng-container>
+                        <ng-container *ngIf="desc.control.hasError('maxlength')">不能超过最大长度200</ng-container>
                     </nz-form-explain>
                 </nz-form-control>
             </nz-form-item>

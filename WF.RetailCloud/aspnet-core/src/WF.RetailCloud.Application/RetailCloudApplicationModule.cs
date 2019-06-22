@@ -22,6 +22,8 @@ namespace WF.RetailCloud
             Configuration.Authorization.Providers.Add<RetailCloudAuthorizationProvider>();
 
             Configuration.Modules.AbpQuartz().Scheduler.JobFactory = new AbpQuartzJobFactory(IocManager);
+
+            //Configuration.Notifications.Notifiers.Add<RealTimeNotifier>();
         }
 
         public override void Initialize()

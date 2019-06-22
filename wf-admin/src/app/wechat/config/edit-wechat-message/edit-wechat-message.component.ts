@@ -32,7 +32,7 @@ export class EditWechatMessageComponent extends ModalComponentBase implements On
     fetchData(): void {
         this.service.getMessageById(this.id.toString()).subscribe((result) => {
             this.wechatMessageE = result;
-            console.log(result);
+            //console.log(result);
         });
     }
 
