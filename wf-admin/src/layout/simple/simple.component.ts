@@ -26,7 +26,8 @@ import { SignalRAspNetCoreHelper } from '@shared/helpers/SignalRAspNetCoreHelper
   encapsulation: ViewEncapsulation.None,
 })
 export class LayoutSimpleComponent implements OnInit {
-  width = 256;
+  width = 230;
+  collapsedWidth = 64;
   isFetching = false;
   isMobile = false;
   theme = this.settings.layout.theme === 'light' ? 'light' : 'dark';
@@ -110,6 +111,7 @@ export class LayoutSimpleComponent implements OnInit {
       'collapsed',
       typeof status !== 'undefined' ? status : !this.settings.layout.collapsed,
     );
+    this.width = this.settings.layout.collapsed ? 50 : 230;
   }
 
   ngOnInit(): void {

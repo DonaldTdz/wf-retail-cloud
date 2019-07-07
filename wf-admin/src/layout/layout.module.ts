@@ -10,7 +10,7 @@ import { HeaderUserComponent } from './default/header/components/user.component'
 import { YoYoSidebarNavComponent } from './default/sidebar/components/yoyo-sidebar-nav.component';
 import { LayoutDefaultComponent } from './default/layout-default.component';
 //import { ChangePasswordComponent } from './default/change-password/change-password.component';
-import { HeaderNotifyComponent } from '@layout/default/header/components/notify.component';
+//import { HeaderNotifyComponent } from '@layout/default/header/components/notify.component';
 
 const COMPONENTS = [
   HeaderComponent,
@@ -39,6 +39,7 @@ import { LayoutSimpleHeaderUserComponent } from './simple/header/components/user
 import { LayoutSimpleHeaderSearchComponent } from './simple/header/components/search.component';
 import { ChangePasswordComponent } from './simple/change-password/change-password.component';
 import { HeaderIconComponent } from './simple/header/components/icon.component';
+import { HeaderNotifyComponent } from './simple/header/components/notify.component';
 
 const SIMPLE = [
   LayoutSimpleSidebarComponent,

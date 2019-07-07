@@ -10,6 +10,7 @@ import { AppSessionService } from '@shared/session/app-session.service';
 @Component({
   selector: 'layout-simple-sidebar',
   templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.less'],
   preserveWhitespaces: false,
 })
 export class LayoutSimpleSidebarComponent {

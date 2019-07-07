@@ -1,6 +1,6 @@
 <ng-template #sideTpl>
   <nz-sider [nzTrigger]="null" [nzCollapsible]="true" [nzCollapsed]="settings.layout.collapsed" [nzWidth]="width"
-    class="layout-simple__sider" [class.light]="theme === 'light'">
+    [nzCollapsedWidth]="collapsedWidth" class="layout-simple__sider" [class.light]="theme === 'light'">
     <div class="layout-simple__logo" key="logo">
       <a [routerLink]="['/']">
         <img src="./assets/logo01.png" alt="咿呀亲贝O2O平台" />
@@ -17,7 +17,7 @@
     <div class="ls__drawer-wrapper" [ngStyle]="{
       'width.px': width,
       'left.px': -width,
-      'transform': !settings.layout.collapsed ? 'translateX(256px)' : null
+      'transform': !settings.layout.collapsed ? 'translateX(230px)' : 'translateX(64px)'
     }">
       <div class="ls__drawer-content">
         <ng-template [ngTemplateOutlet]="sideTpl"></ng-template>
@@ -27,9 +27,9 @@
   <ng-container *ngIf="!isMobile">
     <ng-template [ngTemplateOutlet]="sideTpl"></ng-template>
   </ng-container>
-  <div class="ant-layout" [style.padding-left]="settings.layout.collapsed? '80px' : '256px'">
+  <div class="ant-layout" [style.padding-left]="settings.layout.collapsed? '64px' : '230px'">
     <div class="ant-layout-header">
-      <layout-simple-header [isMobile]="isMobile" [style.padding-left]="settings.layout.collapsed? '80px' : '256px'">
+      <layout-simple-header [isMobile]="isMobile" [style.padding-left]="settings.layout.collapsed? '64px' : '230px'">
       </layout-simple-header>
     </div>
     <div class="ant-layout-content" style="margin: 0 10px 0px; height: 100%; padding-top: 64px; ">

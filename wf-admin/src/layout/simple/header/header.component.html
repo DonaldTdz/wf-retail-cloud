@@ -23,7 +23,16 @@
         <i nz-icon type="lock"></i>
       </div>
     </li> -->
+    <li>
+      <!-- top menu -->
+      <ul nz-menu [nzMode]="'horizontal'" style="height: 64px; line-height:64px; background:#f0f2f5;">
+        <li nz-menu-item><i nz-icon type="shop"></i> 店铺收银</li>
+        <li nz-menu-item><i nz-icon type="global"></i> 会员商城</li>
+        <li nz-menu-item nzSelected="true"><i nz-icon type="laptop"></i> 平台管理</li>
+      </ul>
+    </li>
   </ul>
+
   <!--Search-->
   <!-- <layout-simple-header-search></layout-simple-header-search> -->
   <!--Link-->
@@ -35,10 +44,23 @@
   <!--User-->
   <!-- <layout-simple-header-user></layout-simple-header-user>  -->
   <ul class="alain-default__nav">
+    <li>
+      <nz-dropdown>
+        <a nz-dropdown> 选择门店 <i nz-icon type="down"></i> </a>
+        <ul nz-menu nzSelectable>
+          <li nz-menu-item>
+            <a>金棕榈中门店</a>
+          </li>
+          <li nz-menu-item>
+            <a>金棕榈广场店</a>
+          </li>
+        </ul>
+      </nz-dropdown>
+    </li>
     <!-- Notify -->
-    <!-- <li class="simple-header-color">
+    <li class="simple-header-color">
       <header-notify class="simple-header-color"></header-notify>
-    </li> -->
+    </li>
     <!-- App Icons -->
     <li class="hidden-mobile">
       <header-icon></header-icon>
