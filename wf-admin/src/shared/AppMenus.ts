@@ -110,7 +110,7 @@ export class AppMenus {
                     reuse: false
                 },
             ]
-        }
+        },
         {
             text: "钉钉管理",
             icon: { type: "icon", value: "dingding" },
